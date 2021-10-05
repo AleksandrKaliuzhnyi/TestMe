@@ -1,7 +1,3 @@
-# TestMe app
-QA Mania  
-https://qamania.org/
-
 ## About
 The main goal of this application - learn how to cover web apps with autotests.
 It is designed to be cross platform and does not require many dependencies.  
