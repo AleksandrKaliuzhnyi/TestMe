@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Update Test{% endblock %}
+
+{% block content %}
+  <div class="wrap wrapFlex">
+    <div class="container">
+      <div class="wBox">
+        <h3>Update Test</h3>
+        <div class="updateForm">
+          <form method="post">
+              {% csrf_token %}
+              <p>Test id: {{ test_id }}</p>
+              <p>
+                <label>Test name</label>
+                {{ form.name }}
+              </p>
+              <p>Test author: {{ author.username }}</p>
+              <p>Test run times: {{ test_runs }}</p>
+              <p>
+                <label class="label" for="id_description">Test description</label>
+                {{ form.description }}
+              </p>
+              <div class="btn"><input type="submit" value="Update"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
